@@ -26,6 +26,7 @@ describe('SongQueueView', function() {
   it('renders when add or remove event fires from the song queue collection', function(){
     spyOn(SongQueueView.prototype, 'render').andCallThrough();
     view = new SongQueueView({collection: fakeSongs});
+    console.log(view);
     view.collection.add({
       artist: 'data',
       url: '/test/testsong3.mp3',
