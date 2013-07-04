@@ -2,19 +2,26 @@ var LibraryEntryView = Backbone.View.extend({
 
   tagName: 'tr',
   template: Handlebars.compile($("#libraryEntryView-template").html()),
-
   events: {
-    'click': function() {
+    'click #title': function() {
       this.model.enqueue();
+    },
+    "click #voteUp": function(){
+      this.model.voteUp();
+    },
+    "click #voteDown": function(){
+      this.model.voteDown();
     }
   },
 
   render: function(){
-    // var source = $("#libraryEntryView-template").html();
-    // var source = "<td> {{ artist }} </td> <td> {{ title }} </td>";
-    // var template = Handlebars.compile(source);
-    // $el = $(this.el);
     this.$el.html(this.template(this.model.attributes));
+
+    // thumbs actions
+    this.$el.find('.vote').removeClass('active');
+    this.model.get('vote') === "true" && this.$el.find('#voteUp').addClass('active');
+    this.model.get('vote') === "false" && this.$el.find('#voteDown').addClass('active');
+
     return this;
   }
 

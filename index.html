@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
+  <link rel="stylesheet" type="text/css" href="app.css">
     <script id="EntryView-template" type="text/x-handlebars-template">
       <td> {{ artist }} </td>
       <td> {{ title }} </td>
     </script>
     <script id="libraryEntryView-template" type="text/x-handlebars-template">
-      <td> {{ artist }} </td>
-      <td> {{ title }} </td>
-      <td> {{ count }} </td>
+      <td id="artist">{{ artist }} </td>
+      <td id="title"> {{ title }} </td>
+      <td id="count"> {{ count }} </td>
+      <td><span id='voteUp' class="vote"> up </span> <span id='voteDown' class="vote"> down </span></td>
     </script>
   </head>
   <body>
