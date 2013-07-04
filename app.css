@@ -1,3 +1,23 @@
-.active{
-  background-color: blue;
+.vote {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+#voteUp{
+  background: url('img/sprite.png') no-repeat -50px 0;
+}
+#voteDown{
+  background: url('img/sprite.png') no-repeat 0 0;
+}
+#voteUp.active{
+  background: url('img/sprite.png') no-repeat -150px 0;
+}
+#voteDown.active{
+  background: url('img/sprite.png') no-repeat -100px 0;
+}
+playIcon{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: url('img/sprite.png') no-repeat -200px 0;
 }
