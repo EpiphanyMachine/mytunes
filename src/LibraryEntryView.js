@@ -2,6 +2,7 @@ var LibraryEntryView = Backbone.View.extend({
 
   tagName: 'tr',
   template: Handlebars.compile($("#libraryEntryView-template").html()),
+
   events: {
     'click #title': function() {
       this.model.enqueue();
