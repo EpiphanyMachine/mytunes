@@ -11,6 +11,9 @@ var LibraryEntryView = Backbone.View.extend({
     },
     "click #voteDown": function(){
       this.model.voteDown();
+    },
+    "click #topOfQueue": function(){
+      this.model.topOfQueue();
     }
   },
 

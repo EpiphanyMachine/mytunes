@@ -13,6 +13,9 @@ var App = Backbone.Model.extend({
     params.library.on('ended', function(song) {
       this.get('songQueue').trigger('ended', song);
     }, this);
+    params.library.on('topOfQueue', function(song) {
+      this.get('songQueue').trigger('topOfQueue', song);
+    }, this);
   }
 
 });

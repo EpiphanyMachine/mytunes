@@ -29,6 +29,9 @@ var Song = Backbone.Model.extend({
     this.get('vote') === "false" ? this.set('vote', "null") : this.set('vote', "false");
     localStorage.setItem('vote' + this.get('url') , this.get('vote'));
     this.trigger('vote', this);
+  },
+  topOfQueue: function(){
+    this.trigger('topOfQueue', this);
   }
 
 });

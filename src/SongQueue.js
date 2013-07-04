@@ -21,6 +21,11 @@ var SongQueue = Songs.extend({
       }
     }, this);
 
+    this.on('topOfQueue', function(song){
+      this.unshift(song);
+      this.playFirst();
+    }, this);
+
   },
 
   playFirst: function(){
