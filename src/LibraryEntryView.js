@@ -1,7 +1,7 @@
 var LibraryEntryView = Backbone.View.extend({
 
   tagName: 'tr',
-  template: Handlebars.compile($("#EntryView-template").html()),
+  template: Handlebars.compile($("#libraryEntryView-template").html()),
 
   events: {
     'click': function() {
