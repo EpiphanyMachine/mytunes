@@ -21,3 +21,36 @@
   height: 50px;
   background: url('img/sprite.png') no-repeat -200px 0;
 }
+.library, .queue {
+  margin:auto;
+}
+.library{
+  background-color: rgba(255,20,147,0.2);
+}
+.queue{
+  background-color: rgba(20,20,147,0.2);
+}
+body {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  background-image: url("img/dollasign.gif");
+  color: #FFFF00;
+  font-size: 20px;
+}
+#flame{
+  width:100%;
+  position:absolute;
+  top:85%;
+  left: 0;
+}
+.babies{
+  height: 110px;
+  width: 70%;
+  overflow: hidden;
+  margin: auto;
+  background: url("img/dancingbaby2.gif");
+}
+.audioController{
+  position: absolute;
+  top: 80%;
+  left: 2.5%;
+}

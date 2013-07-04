@@ -1,6 +1,6 @@
 var PlayerView = Backbone.View.extend({
 
-  el: '<audio controls autoplay />',
+  el: '<audio class="audioController" controls autoplay />',
 
   initialize: function() {
   },

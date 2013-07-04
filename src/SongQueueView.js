@@ -11,7 +11,7 @@ var SongQueueView = Backbone.View.extend({
     }, this);
   },
 
-  tagName: "table",
+  tagName: "table class='queue'",
 
   render: function(){
     this.$el.children().detach();
